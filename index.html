@@ -1,366 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>3D4U | Custom 3D Printing</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <title>3D4U | Custom 3D Printing</title>
 
-<style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-scroll-behavior:smooth;
-font-family:Poppins,sans-serif;
-}
-
-body{
-background:#0b0b0b;
-color:white;
-}
-
-header{
-position:fixed;
-top:0;
-width:100%;
-background:#111;
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:20px 8%;
-box-shadow:0 5px 15px rgba(0,0,0,.3);
-z-index:1000;
-}
-
-header img{
-height:55px;
-}
-
-nav a{
-color:white;
-text-decoration:none;
-margin-left:25px;
-transition:.3s;
-font-weight:500;
-}
-
-nav a:hover{
-color:#00FFAE;
-}
-
-.hero{
-height:100vh;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-text-align:center;
-padding:20px;
-background:linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.75)),url("https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1500&q=80");
-background-size:cover;
-background-position:center;
-}
-
-.hero h1{
-font-size:65px;
-margin-bottom:20px;
-}
-
-.hero p{
-font-size:22px;
-max-width:700px;
-margin-bottom:40px;
-}
-
-.button{
-background:#00FFAE;
-color:black;
-padding:15px 35px;
-border-radius:40px;
-font-weight:bold;
-text-decoration:none;
-transition:.3s;
-}
-
-.button:hover{
-transform:scale(1.05);
-}
-
-section{
-padding:100px 10%;
-}
-
-h2{
-text-align:center;
-font-size:40px;
-margin-bottom:30px;
-color:#00FFAE;
-}
-
-.about p{
-max-width:900px;
-margin:auto;
-font-size:18px;
-line-height:1.8;
-text-align:center;
-}
-
-.gallery{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:30px;
-}
-
-.card{
-background:#1b1b1b;
-border-radius:15px;
-overflow:hidden;
-transition:.3s;
-}
-
-.card:hover{
-transform:translateY(-8px);
-}
-
-.card img{
-width:100%;
-height:220px;
-object-fit:cover;
-}
-
-.card h3{
-padding:15px;
-}
-
-.card button{
-margin:0 15px 20px;
-padding:12px;
-width:calc(100% - 30px);
-background:#00FFAE;
-border:none;
-font-weight:bold;
-border-radius:8px;
-cursor:pointer;
-}
-
-.features{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:25px;
-text-align:center;
-}
-
-.feature{
-background:#171717;
-padding:30px;
-border-radius:15px;
-}
-
-form{
-max-width:700px;
-margin:auto;
-display:flex;
-flex-direction:column;
-gap:15px;
-}
-
-input,textarea{
-padding:15px;
-border:none;
-border-radius:10px;
-font-size:16px;
-}
-
-textarea{
-height:180px;
-resize:none;
-}
-
-form button{
-padding:15px;
-background:#00FFAE;
-border:none;
-font-size:18px;
-font-weight:bold;
-cursor:pointer;
-border-radius:10px;
-}
-
-.reviews{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-gap:25px;
-}
-
-.review{
-background:#181818;
-padding:30px;
-border-radius:15px;
-}
-
-footer{
-background:#111;
-padding:40px;
-text-align:center;
-color:#aaa;
-margin-top:80px;
-}
-
-</style>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 
 <body>
 
 <header>
 
-<img src="logo.png" alt="3D4U Logo">
+    <div class="header-content">
 
-<nav>
-<a href="#about">About</a>
-<a href="#gallery">Gallery</a>
-<a href="#contact">Custom Orders</a>
-</nav>
+        <img src="images/logo.png" class="logo" alt="3D4U Logo">
+
+        <h1>3D4U</h1>
+
+        <p>For all your printing needs</p>
+
+    </div>
 
 </header>
 
-<section class="hero">
 
-<h1>Bring Your Ideas To Life</h1>
 
-<p>
-Student-owned custom 3D printing business creating unique gifts, toys,
-decorations, organizers, and completely custom designs.
-</p>
+<nav>
 
-<a href="#gallery" class="button">Browse Our Creations</a>
+    <a href="#about">About</a>
+
+    <a href="#gallery">Gallery</a>
+
+    <a href="#custom">Custom Orders</a>
+
+    <a href="#contact">Contact</a>
+
+</nav>
+
+
+
+
+<section id="about">
+
+    <div class="about">
+
+        <h2>About 3D4U</h2>
+
+        <p>
+            Welcome to 3D4U! We create high-quality 3D printed
+            products and custom designs. Whether you need a fun
+            creation, a useful item, or something unique,
+            we can help bring your ideas to life.
+        </p>
+
+    </div>
 
 </section>
 
-<section class="about" id="about">
 
-<h2>About 3D4U</h2>
 
-<p>
 
-Welcome to 3D4U! We create high-quality custom 3D printed products designed for
-everyone. Whether you're looking for a unique gift, gaming accessories,
-articulated dragons, keychains, desk decorations, or a completely custom
-creation, we're here to help bring your ideas to life.
-
-</p>
-
-</section>
 
 <section id="gallery">
 
-<h2>Gallery</h2>
+    <h2>Our Creations</h2>
 
-<div class="gallery">
 
-<div class="card">
-<img src="https://picsum.photos/500/400?1">
-<h3>Articulated Dragons</h3>
-<button>Request This Design</button>
-</div>
+    <div class="products">
 
-<div class="card">
-<img src="https://picsum.photos/500/400?2">
-<h3>Keychains</h3>
-<button>Request This Design</button>
-</div>
 
-<div class="card">
-<img src="https://picsum.photos/500/400?3">
-<h3>Desk Decor</h3>
-<button>Request This Design</button>
-</div>
+        <div class="card">
 
-<div class="card">
-<img src="https://picsum.photos/500/400?4">
-<h3>Fidget Toys</h3>
-<button>Request This Design</button>
-</div>
+            <img src="images/print1.jpg" alt="Sprial Fidget">
 
-</div>
+            <h3>Featured Print</h3>
+
+            <p>
+                One of our favorite 3D printed creations.
+            </p>
+
+        </div>
+
+
+
+        <div class="card">
+
+            <img src="images/print2.jpeg" alt="Sunglasses">
+
+            <h3>Useful Designs</h3>
+
+            <p>
+                Custom items made for everyday use.
+            </p>
+
+        </div>
+
+
+
+        <div class="card">
+
+            <img src="images/print3.jpeg" alt="Phone Holders">
+
+            <h3>Custom Projects</h3>
+
+            <p>
+                Unique designs created from your ideas.
+            </p>
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+
+
+
+
+<section id="custom">
+
+    <div class="custom-orders">
+
+
+        <h2>Custom Orders</h2>
+
+
+        <p>
+            Have an idea you want printed?
+            Send us your design, picture, or idea, and we will help
+            create something made just for you.
+        </p>
+
+
+        <button>
+            Request a Custom Print
+        </button>
+
+
+    </div>
+
 
 </section>
 
-<section>
 
-<h2>Why Choose 3D4U?</h2>
 
-<div class="features">
 
-<div class="feature">
-<h3>High Quality Prints</h3>
-</div>
 
-<div class="feature">
-<h3>Custom Designs</h3>
-</div>
 
-<div class="feature">
-<h3>Fast Turnaround</h3>
-</div>
-
-<div class="feature">
-<h3>Student Owned Business</h3>
-</div>
-
-</div>
-
-</section>
 
 <section id="contact">
 
-<h2>Custom Orders</h2>
 
-<form>
+    <div class="contact">
 
-<input type="text" placeholder="Your Name">
 
-<input type="email" placeholder="Email Address">
+        <h2>Contact Us</h2>
 
-<input type="text" placeholder="Preferred Colors">
 
-<input type="text" placeholder="Preferred Size">
+        <p>
+            Ready to start a project?
+            Contact 3D4U today.
+        </p>
 
-<textarea placeholder="Tell us what you'd like us to create..."></textarea>
 
-<button>Send Request</button>
+        <p>
+            Email:
+            <a href="mailto:graysonbradshaw968@gmail.com">
+                graysonbradshaw968@gmail.com
+            </a>
+        </p>
 
-</form>
 
-</section>
+    </div>
 
-<section>
-
-<h2>Customer Reviews</h2>
-
-<div class="reviews">
-
-<div class="review">
-⭐⭐⭐⭐⭐
-<p>Amazing quality and super friendly service!</p>
-</div>
-
-<div class="review">
-⭐⭐⭐⭐⭐
-<p>Exactly what I wanted. Highly recommend!</p>
-</div>
-
-</div>
 
 </section>
+
+
+
+
+
 
 <footer>
 
-<p>© 2026 3D4U | For All Your Printing Needs</p>
+    <p>
+        © 2026 3D4U | Custom 3D Printing
+    </p>
 
 </footer>
 
+
+
+<script src="script.js"></script>
+
+
 </body>
+
 </html>
