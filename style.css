@@ -1,167 +1,250 @@
-/* 3D4U Website Styles */
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, sans-serif;
 }
+
 
 body {
-    background-color: #f5f5f5;
-    color: #222;
-    line-height: 1.6;
+
+    background: #000;
+
+    color: white;
+
 }
 
-/* Header */
+
+
 header {
-    background: #00ffae;
-    padding: 20px;
+
     text-align: center;
+
+    padding: 60px 20px;
+
+    background: #000;
+
+    border-bottom: 3px solid #00FFAE;
+
 }
 
-.logo {
-    width: 150px;
-    max-width: 90%;
+
+
+header img {
+
+    width: 180px;
+
+    max-width: 80%;
+
 }
+
+
 
 header h1 {
-    font-size: 40px;
-    margin-top: 10px;
+
+    font-size: 50px;
+
+    color: #00FFAE;
+
 }
+
+
 
 header p {
-    font-size: 18px;
+
+    font-size: 20px;
+
 }
 
-/* Navigation */
+
+
+
+
 nav {
+
     background: #111;
-    padding: 12px;
+
+    padding: 20px;
+
     text-align: center;
+
 }
+
+
 
 nav a {
+
     color: white;
+
     text-decoration: none;
-    margin: 0 15px;
-    font-size: 18px;
+
+    margin: 15px;
+
 }
+
+
 
 nav a:hover {
-    color: #00ffae;
+
+    color: #00FFAE;
+
 }
 
 
-/* Main Sections */
+
+
+
 section {
-    padding: 40px 10%;
+
+    padding: 50px 10%;
+
+    text-align: center;
+
 }
+
+
 
 h2 {
-    text-align: center;
-    font-size: 32px;
+
+    color: #00FFAE;
+
+    font-size: 35px;
+
     margin-bottom: 20px;
+
 }
 
 
-/* About Section */
-.about {
-    background: white;
-    border-radius: 15px;
-    padding: 30px;
-    text-align: center;
+
+
+#about p,
+#custom p,
+#contact p {
+
+    font-size: 18px;
+
 }
 
 
-/* Products */
-.products {
+
+
+
+.gallery {
+
     display: flex;
+
     justify-content: center;
-    gap: 25px;
+
+    gap: 30px;
+
     flex-wrap: wrap;
+
 }
+
+
+
 
 .card {
-    background: white;
-    width: 300px;
-    padding: 25px;
+
+    background: #111;
+
+    border: 2px solid #00FFAE;
+
     border-radius: 15px;
-    text-align: center;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+
+    width: 300px;
+
+    padding: 20px;
+
 }
+
+
 
 .card img {
+
     width: 100%;
+
     border-radius: 10px;
+
 }
+
+
 
 .card h3 {
-    margin: 15px 0;
+
+    color: #00FFAE;
+
+    margin: 15px;
+
 }
 
 
-/* Custom Orders */
-.custom-orders {
-    background: #111;
-    color: white;
-    border-radius: 15px;
-    text-align: center;
-}
 
-.custom-orders button {
-    background: #00ffae;
-    color: black;
+
+
+button {
+
+    background: #00FFAE;
+
     border: none;
+
     padding: 15px 30px;
-    margin-top: 20px;
-    border-radius: 25px;
+
+    border-radius: 30px;
+
     font-size: 18px;
+
+    margin-top: 20px;
+
     cursor: pointer;
-}
 
-.custom-orders button:hover {
-    background: white;
 }
 
 
-/* Contact */
-.contact {
-    background: white;
-    border-radius: 15px;
-    text-align: center;
-}
 
-.contact a {
-    color: #00a874;
-    text-decoration: none;
-    font-weight: bold;
+
+
+a {
+
+    color: #00FFAE;
+
 }
 
 
-/* Footer */
+
+
+
 footer {
+
     background: #111;
-    color: white;
+
     text-align: center;
+
     padding: 20px;
+
+    border-top: 2px solid #00FFAE;
+
 }
 
 
-/* Mobile Layout */
-@media (max-width: 700px) {
 
-    header h1 {
-        font-size: 30px;
+
+
+@media(max-width:700px){
+
+    header h1{
+
+        font-size:35px;
+
     }
 
-    section {
-        padding: 25px 5%;
-    }
 
-    nav a {
-        display: block;
-        margin: 10px;
+    nav a{
+
+        display:block;
+
+        margin:10px;
+
     }
 
 }
